@@ -1,0 +1,7 @@
+<div *ngIf="linkList$ | async as linkList">
+  <app-link-card
+    *ngFor="let link of linkList"
+    [link]="link.originalLink"
+    [shortenedLink]="link.shortLink"
+  ></app-link-card>
+</div>

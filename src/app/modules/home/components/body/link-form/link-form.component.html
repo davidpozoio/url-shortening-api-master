@@ -1,0 +1,22 @@
+<form>
+  <input
+    type="text"
+    id="targetInput"
+    class="input"
+    [formControl]="linkControl"
+  />
+  <button
+    type="button"
+    (click)="onSubmit()"
+    class="button"
+    [disabled]="disabledSubmit"
+  >
+    Shorten it!
+  </button>
+</form>
+<small
+  *ngIf="linkControl.errors?.['required'] && linkControl.touched"
+  class="required-error"
+>
+  Please add a link
+</small>

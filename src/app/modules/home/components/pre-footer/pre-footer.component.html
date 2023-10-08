@@ -1,0 +1,17 @@
+<section>
+  <header>
+    <h2>Advanced Statitics</h2>
+    <p>Lorem, ipsum dolor sit amet consecte</p>
+  </header>
+  <section class="info-cards">
+    <app-card
+      *ngFor="let card of cards"
+      [title]="card.title"
+      [description]="card.description"
+    ></app-card>
+  </section>
+  <section>
+    <h2>Boost your link today</h2>
+    <app-get-started-button></app-get-started-button>
+  </section>
+</section>
