@@ -1,9 +1,14 @@
-<form>
+<form class="form">
+  <img
+    src="../../../../../../assets/images/bg-shorten-desktop.svg"
+    class="img"
+  />
   <input
     type="text"
     id="targetInput"
     class="input"
     [formControl]="linkControl"
+    placeholder="Shorten a link here..."
   />
   <button
     type="button"
@@ -13,10 +18,10 @@
   >
     Shorten it!
   </button>
+  <small
+    *ngIf="linkControl.errors?.['required'] && linkControl.touched"
+    class="required-error"
+  >
+    Please add a link
+  </small>
 </form>
-<small
-  *ngIf="linkControl.errors?.['required'] && linkControl.touched"
-  class="required-error"
->
-  Please add a link
-</small>

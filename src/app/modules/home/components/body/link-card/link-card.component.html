@@ -1,7 +1,9 @@
-<figure>
+<figure class="card">
   <span class="original-link">{{ link }}</span>
-  <span class="short-link">{{ shortenedLink }}</span>
-  <button (click)="copyShortLink()" type="button" class="copy-button">
-    {{ buttonText }}
-  </button>
+  <div class="short-link-container">
+    <span class="short-link">{{ shortenedLink }}</span>
+    <button (click)="copyShortLink()" type="button" class="copy-button">
+      {{ buttonText }}
+    </button>
+  </div>
 </figure>

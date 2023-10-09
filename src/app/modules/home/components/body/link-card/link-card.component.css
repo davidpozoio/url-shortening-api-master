@@ -1,7 +1,47 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 65px;
+
+  background-color: white;
+  border-radius: 8px;
+}
+
 .original-link {
-  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.short-link-container {
+  display: flex;
+  gap: 20px;
 }
 
 .short-link {
-  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.copy-button {
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
 }

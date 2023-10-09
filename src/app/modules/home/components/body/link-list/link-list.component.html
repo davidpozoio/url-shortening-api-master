@@ -1,4 +1,4 @@
-<div *ngIf="linkList$ | async as linkList">
+<div *ngIf="linkList$ | async as linkList" class="link-list">
   <app-link-card
     *ngFor="let link of linkList"
     [link]="link.originalLink"
