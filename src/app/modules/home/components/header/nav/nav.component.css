@@ -47,6 +47,13 @@
 }
 
 .button--color {
-  background-color: var(--primary-pale-color);
+  background-color: var(--primary-color);
   color: white;
+}
+
+@media (max-width: 800px) {
+  .options,
+  .buttons {
+    display: none;
+  }
 }

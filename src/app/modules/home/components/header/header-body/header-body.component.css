@@ -4,7 +4,6 @@
   padding-top: 30px;
 
   min-height: fit-content;
-  max-height: 400px;
 }
 
 .img {
@@ -26,8 +25,28 @@
 }
 
 .description {
-  width: 35ch;
+  min-width: 100px;
+  max-width: 400px;
   color: var(--neutral-pale-color);
   font-size: 20px;
   margin-top: 10px;
+}
+
+@media (max-width: 885px) {
+  .header-body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    width: 100%;
+  }
+  .description-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description,
+  .title {
+    text-align: center;
+  }
 }
