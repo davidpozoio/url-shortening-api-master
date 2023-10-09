@@ -1,17 +1,15 @@
-<section>
-  <header>
-    <h2>Advanced Statitics</h2>
-    <p>Lorem, ipsum dolor sit amet consecte</p>
+<section class="statistics">
+  <header class="header">
+    <h2 class="title">Advanced Statitics</h2>
+    <p class="description">Lorem, ipsum dolor sit amet consecte</p>
   </header>
   <section class="info-cards">
     <app-card
-      *ngFor="let card of cards"
+      *ngFor="let card of cards; let idx = index"
       [title]="card.title"
       [description]="card.description"
+      [icon]="card.icon"
+      [class]="'card' + idx"
     ></app-card>
-  </section>
-  <section>
-    <h2>Boost your link today</h2>
-    <app-get-started-button></app-get-started-button>
   </section>
 </section>

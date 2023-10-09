@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './logotype.component.html',
-  styleUrls: ['./logotype.component.css']
+  styleUrls: ['./logotype.component.css'],
 })
 export class LogotypeComponent {
-
+  @Input() color = '';
 }

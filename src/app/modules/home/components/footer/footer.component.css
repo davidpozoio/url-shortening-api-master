@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 70px;
+  padding-bottom: 40px;
+
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+
+.contact {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+
+  color: white;
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--neutral-pale-color);
+  font-style: normal;
+  transition: color 0.1s;
+}
+
+.link:hover {
+  color: var(--primary-color);
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.icon {
+  transition: filter 0.2s;
+}
+
+.icon:hover {
+  filter: invert(8%) sepia(100%) saturate(6481%);
+}

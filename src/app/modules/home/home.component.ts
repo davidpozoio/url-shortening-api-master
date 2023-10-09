@@ -6,6 +6,7 @@ import { LinkService } from './services/link/link.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PreFooterComponent } from './components/pre-footer/pre-footer.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ExtraSectionComponent } from './components/extra-section/extra-section.component';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HttpClientModule,
     PreFooterComponent,
     FooterComponent,
+    ExtraSectionComponent,
   ],
   providers: [LinkService],
   templateUrl: './home.component.html',

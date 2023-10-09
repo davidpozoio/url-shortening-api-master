@@ -1,0 +1,55 @@
+.statistics {
+  margin-top: 70px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.description {
+  color: var(--neutral-pale-color);
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  gap: 30px;
+
+  margin-top: 50px;
+}
+
+.card1 {
+  position: relative;
+  top: 40px;
+}
+
+.card1::before,
+.card2::before {
+  position: absolute;
+  top: 30%;
+  left: -30px;
+
+  display: block;
+  content: "";
+  width: 30px;
+  height: 10px;
+
+  background-color: var(--primary-color);
+}
+
+.card2::before {
+  top: 10%;
+}
+
+.card2 {
+  position: relative;
+  top: 80px;
+}

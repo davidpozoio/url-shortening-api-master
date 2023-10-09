@@ -1,5 +1,9 @@
-<figure>
-  <img src="" alt="icon" />
-  <h3>{{ title }}</h3>
-  <p>{{ description }}</p>
+<figure class="card">
+  <div class="mask">
+    <img [src]="icon" alt="icon" class="img" />
+  </div>
+  <div class="text">
+    <h3>{{ title }}</h3>
+    <p class="description">{{ description }}</p>
+  </div>
 </figure>

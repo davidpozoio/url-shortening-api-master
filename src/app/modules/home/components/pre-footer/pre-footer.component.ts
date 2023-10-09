@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { Card } from './model/card.model';
-import { GetStartedButtonComponent } from 'src/app/shared/components/get-started-button/get-started-button.component';
 
 @Component({
   selector: 'app-pre-footer',
   standalone: true,
-  imports: [CommonModule, CardComponent, GetStartedButtonComponent],
+  imports: [CommonModule, CardComponent],
   templateUrl: './pre-footer.component.html',
   styleUrls: ['./pre-footer.component.css'],
 })
@@ -16,9 +15,21 @@ export class PreFooterComponent {
 
   constructor() {
     this.cards = [
-      { title: 'Brand Recognition', description: 'lorem', icon: '' },
-      { title: 'Detailed Records', description: 'lorem', icon: '' },
-      { title: 'Fully Customizable', description: 'lorem', icon: '' },
+      {
+        title: 'Brand Recognition',
+        description: 'lorem',
+        icon: '../../../../../../assets/images/icon-brand-recognition.svg',
+      },
+      {
+        title: 'Detailed Records',
+        description: 'lorem',
+        icon: '../../../../../../assets/images/icon-detailed-records.svg',
+      },
+      {
+        title: 'Fully Customizable',
+        description: 'lorem',
+        icon: '../../../../../../assets/images/icon-fully-customizable.svg',
+      },
     ];
   }
 }
